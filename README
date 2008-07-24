@@ -1,0 +1,25 @@
+h1. FirePHP Prototype
+
+Extensions to the FirePHP Firebug Extension for use with server-side JavaScript and the Prototype JavaScript Framework
+
+These files allow you to use the "FirePHP":http://firephp.org/ "Firebug":http://getfirebug.com Extension with the "Jaxer":http://aptana.com/jaxer or ASP(Active Server Pages) environments. They require the "Prototype JavaScript Framework":http://prototypejs.org/.
+
+The fb function and console namespace have two separate implementations: one for Jaxer and one for ASP. This is because of the subtle differences between the platforms.
+
+All code here is a proof of concept and should not be depended on for production purposes. No testing has been done, but it appears to work.
+
+h2. Files
+
+* README: This document
+* demo: Demos of the extensions. These pages will show a blank page, but will display information in the Firebug console panels if FirePHP is installed
+** demo.jaxer.html: Demonstration of Jaxer version
+** demo.asp: Demonstration of ASP version
+* doc: Documentation for individual implementations
+** README.ASP.textile: Documentation for ASP version
+** README.Jaxer.textile: Documentation for Jaxer version
+* lib: Script files
+** console.js: Jaxer implemenation of a subset of the Firebug console API
+** console.js.asp: ASP imlementation
+** fb.js: Jaxer implementation of the fb() function
+** fb.js.asp: ASP implementation
+** prototype.js.asp: Version of Prototype.js that works on ASP/JScript (from http://nlsmith.com/projects/prototype-asp)

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- Get Prototype from Google -->
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.2/prototype.js" runat="server"></script>
+<!-- Demo of the fb() function -->
+<script src="../lib/fb.js" runat="server"></script>
+<script runat="server">
+  fb('Hello World');
+  fb('Hello World 2');
+
+  fb('Log message', fb.LOG);
+  fb('Info message', fb.INFO);
+  fb('Warn message', fb.WARN);
+  fb('Error message', fb.ERROR);
+
+  fb('Message with label','Label', fb.LOG);
+
+  fb(Jaxer.request, 'Jaxer.request', fb.LOG);
+
+  try {
+    throw new Error('Test Exception');
+  } catch(e) {
+    fb(e);
+  }
+
+  // Will show only in "Server" tab for the request
+  fb(Jaxer.session, 'Jaxer.session', fb.DUMP);
+</script>
+<!-- Same type of thing, but for the console functions -->
+<script src="../lib/console.js" runat="server"></script>
+<script runat="server">
+  console.log('Hello World');
+  console.log('Hello World 2');
+
+  console.log('Log message', fb.LOG);
+  console.info('Info message', fb.INFO);
+  console.warn('Warn message', fb.WARN);
+  console.error('Error message', fb.ERROR);
+
+  console.log('Message with label');
+
+  console.log(Jaxer.request);
+
+  try {
+    throw new Error('Test Exception');
+  } catch(e) {
+    console.error(e);
+  }
+</script>
+</body>
+</html>
