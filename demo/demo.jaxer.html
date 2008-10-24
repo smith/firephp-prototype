@@ -2,7 +2,7 @@
 <html>
 <body>
 <!-- Get Prototype from Google -->
-<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.2/prototype.js" runat="server"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js" runat="server"></script>
 <!-- Demo of the fb() function -->
 <script src="../lib/fb.js" runat="server"></script>
 <script runat="server">
@@ -33,14 +33,14 @@
   console.log('Hello World');
   console.log('Hello World 2');
 
-  console.log('Log message', fb.LOG);
-  console.info('Info message', fb.INFO);
-  console.warn('Warn message', fb.WARN);
-  console.error('Error message', fb.ERROR);
+  console.log('Log message');
+  console.info('Info message');
+  console.warn('Warn message');
+  console.error('Error message');
 
   console.log('Message with label');
 
-  console.log(Jaxer.request);
+  //console.log(Jaxer.request);
 
   try {
     throw new Error('Test Exception');

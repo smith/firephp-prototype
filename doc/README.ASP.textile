@@ -1,0 +1,13 @@
+h1. FirePHP ASP Library
+
+This library allows you to use FirePHP in the Microsoft "classic" ASP environment. It uses JScript and the Prototype JavaScript Framework for ASP (available at http://nlsmith.com/projects/prototype-asp/) 
+
+There are two libraries provided: fb.js.asp, the fb() function, and console.js.asp, a subset of the "Firebug Console API":http://getfirebug.com/console.html. 
+
+h2. Including the Files
+
+h2. fb()
+
+To use fb(), include the JavaScript files and call the functions. Any JavaScript object can be passed to it. See 
+
+
